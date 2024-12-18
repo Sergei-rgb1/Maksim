@@ -1,0 +1,268 @@
+/* Общие настройки для страницы */
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* Градиент для фона */
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Центрирование меню */
+.navbar-nav {
+    display: flex;
+    justify-content: center; /* Центрирует элементы по горизонтали */
+    align-items: center;     /* Центрирует элементы по вертикали */
+    width: 100%;             /* Занимает всю ширину контейнера */
+    gap: 20px;               /* Расстояние между пунктами */
+}
+
+/* Для улучшения адаптивности, когда меню на мобильных устройствах */
+.navbar-collapse {
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-nav .nav-item {
+    flex: 1; /* Чтобы пункты меню занимали равное место */
+    text-align: center; /* Выравнивание текста внутри пунктов */
+}
+
+/* Убедитесь, что активные элементы выделяются */
+.navbar-nav .nav-link.active {
+    color: #ffd700; /* Золотистый цвет для активной ссылки */
+    font-weight: bold;
+}
+
+/* Главный блок (Hero) */
+.hero {
+    height: 100vh;
+    background: url('./dollars-background-from-packs-off-money-3d_505080-879.avif') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    font-style: italic;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Секция "О Максиме" */
+.about {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 50px 0;
+}
+
+/* Добавьте в style.css */
+.card {
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px) rotateX(5deg);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Добавим неоморфизм для карточек */
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.card-title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #ffd700;
+}
+
+/* Галерея */
+.gallery img {
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Кнопка "Наверх" */
+#backToTop {
+    background-color: #ffd700;
+    color: #0f2027;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+#backToTop:hover {
+    background-color: #ffeb3b;
+    transform: scale(1.1);
+    transition: 0.3s ease;
+}
+
+/* Секция контактов */
+.contacts {
+    background: linear-gradient(135deg, #2c5364, #203a43, #0f2027);
+    text-align: center;
+}
+
+.contacts h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffd700;
+}
+
+.contacts p {
+    font-size: 1.2rem;
+}
+
+/* Анимация появления */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.visible {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+
+
+
+
+/* Добавьте в style.css */
+.achievements {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.achievement-card {
+    text-align: center;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-10px);
+}
+
+.achievement-icon {
+    font-size: 3rem;
+    color: #ffd700;
+    margin-bottom: 20px;
+}
+
+.achievement-number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.achievement-text {
+    color: #cfd8dc;
+    font-size: 1.1rem;
+}
+
+
+/* Стили для секции "Казино" */
+.casino img {
+    width: 120px; /* Размер изображений */
+    height: 120px;
+    object-fit: cover; /* Сохраняет пропорции */
+    border-radius: 10px; /* Скруглённые углы */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Тень */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Анимация при наведении */
+}
+
+.casino img:hover {
+    transform: scale(1.2); /* Увеличение */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4); /* Усиление тени */
+}
+
+/* Центрирование меню */
+.navbar-nav {
+    display: flex;
+    justify-content: center; /* Центрирует ссылки в меню */
+    gap: 20px; /* Расстояние между пунктами */
+}
+
+/* Активная ссылка */
+.navbar-nav .nav-link.active {
+    color: #ffd700; /* Золотистый для активной ссылки */
+    font-weight: bold;
+}
+
+/* Анимация появления изображений */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.casino img {
+    animation: fadeIn 0.6s ease-out;
+}
+
+
+/* Стили для иконки социальной сети */
+.social-link {
+    color: #cfd8dc; /* Цвет иконки */
+    transition: color 0.3s ease, text-shadow 0.3s ease; /* Анимация для цвета и тени */
+    text-decoration: none; /* Убираем подчеркивание */
+}
+
+.social-link:hover {
+    color: #0077ff; /* Цвет иконки при наведении */
+    text-shadow: 0 0 10px #00bcd4, 0 0 20px #00bcd4, 0 0 30px #00bcd4; /* Эффект свечения */
+}
+
+/* Размер иконки */
+.social-link i {
+    font-size: 3rem; /* Размер иконки */
+}
+
+
+
+/* Анимация появления изображений */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.casino img {
+    animation: fadeIn 0.6s ease-out;
+}
